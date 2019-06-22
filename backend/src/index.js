@@ -16,7 +16,7 @@ mongoose.connect(
 );
 
 app.use((req, res, next) => {
-  req.oi = io;
+  req.io = io;
   next();
 });
 
@@ -29,4 +29,4 @@ app.use(
 
 app.use(require("./routes"));
 
-server.listen(3001);
+server.listen(3009);
